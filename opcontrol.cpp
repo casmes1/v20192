@@ -49,10 +49,10 @@ void opcontrol() {
 //angle adjustor controls :)
 
 	if (secondary.get_digital(DIGITAL_L1)){
-		intake_h.move_velocity(200);
+		intake_h.move_velocity(50);
 	}
 	else if (secondary.get_digital(DIGITAL_L2)){
-		intake_h.move_velocity(-200);
+		intake_h.move_velocity(-50);
 	}
 	else{
 		intake_h.move_velocity(0);
